@@ -1,0 +1,13 @@
+
+:host ::ng-deep .custom-accordion .p-accordion-header {
+  border-bottom: none !important;
+}
+
+:host ::ng-deep .custom-accordion .p-accordion-content {
+  border-bottom: none !important;
+}
+
+:host ::ng-deep .custom-accordion {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}

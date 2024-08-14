@@ -1,0 +1,45 @@
+
+
+<p class="fw-bold text-center p-3 text-info fs-5 mt-3">Tree</p>
+<div class="d-flex justify-content-center border-none">
+    <p-tree class="w-full md:w-30rem" [value]="files" />
+</div>
+
+<p class="fw-bold text-center p-3 text-info fs-5 mt-3">Tree Multiple</p>
+<div class="d-flex flex-column align-items-center justify-content-center mt-3">
+    <div class="flex align-items-center mb-4 gap-2">
+        <p-inputSwitch inputId="input-metakey" [(ngModel)]="metaKeySelection" />
+        <label for="input-metakey">MetaKey</label>
+    </div>
+    <p-tree 
+        [metaKeySelection]="metaKeySelection" 
+        [value]="files" 
+        class="w-full md:w-30rem" 
+        selectionMode="multiple" 
+        [(selection)]="selectedFiles" />
+</div>
+<p class="fw-bold text-center p-3 text-info fs-5 mt-3">Tree Checkbox</p>
+<div class="d-flex flex-column align-items-center justify-content-center">
+    <p-tree 
+        [value]="files" 
+        selectionMode="checkbox" 
+        class="w-full md:w-30rem" 
+        [(selection)]="selectedFiles" />
+</div>
+
+
+
+<p class="fw-bold text-center p-3 text-info fs-5 mt-3">Tree Template</p>
+
+<div class="d-flex justify-content-center mt-3">
+    <p-tree [value]="nodes" class="w-full md:w-30rem">
+        <ng-template let-node pTemplate="url">
+            <a [href]="node.data" target="_blank" rel="noopener noreferrer" class="text-700 hover:text-primary text-decoration-none">
+               {{ node.label }}
+            </a>
+        </ng-template>
+        <ng-template let-node pTemplate="default">
+            <b>{{ node.label }}</b>
+        </ng-template>
+    </p-tree>
+</div>
