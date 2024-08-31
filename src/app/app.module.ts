@@ -22,6 +22,16 @@ import { AvatarModule } from 'primeng/avatar';
 import { BadgeModule } from 'primeng/badge';
 import { CardComponent } from './primeng/card/card.component';
 import { CardModule } from 'primeng/card';
+import { PanelComponent } from './panel/panel.component';
+import { DividerComponent } from './panel/divider/divider.component';
+import { DividerModule } from 'primeng/divider';
+import { FieldsetComponent } from './panel/fieldset/fieldset.component';
+import { FieldsetModule } from 'primeng/fieldset';
+import { PanelModule } from 'primeng/panel';
+import { SplitterComponent } from './panel/splitter/splitter.component';
+import { SplitterModule } from 'primeng/splitter';
+
+
 
 
 
@@ -33,7 +43,12 @@ import { CardModule } from 'primeng/card';
     TreeComponent,
     TreeTableComponent,
      AccordianComponent,
-     CardComponent
+     CardComponent,
+     PanelComponent,
+     DividerComponent,
+     FieldsetComponent,
+     SplitterComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -51,7 +66,11 @@ import { CardModule } from 'primeng/card';
     NoopAnimationsModule,
     AvatarModule,
     BadgeModule,
-    CardModule 
+    CardModule,
+    DividerModule,
+    FieldsetModule,
+    PanelModule,
+    SplitterModule
     
 
   
