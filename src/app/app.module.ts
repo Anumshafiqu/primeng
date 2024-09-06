@@ -30,6 +30,17 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { PanelModule } from 'primeng/panel';
 import { SplitterComponent } from './panel/splitter/splitter.component';
 import { SplitterModule } from 'primeng/splitter';
+import { StepperModule } from 'primeng/stepper';
+import { StepperComponent } from './panel/stepper/stepper.component';
+import { ScrollpanelComponent } from './panel/scrollpanel/scrollpanel.component';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { TabviewComponent } from './panel/tabview/tabview.component';
+import { TabViewModule } from 'primeng/tabview';
+import { ToolbarModule } from 'primeng/toolbar';
+import { ToolbarComponent } from './panel/toolbar/toolbar.component';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ToastModule } from 'primeng/toast';
 
 
 
@@ -48,6 +59,10 @@ import { SplitterModule } from 'primeng/splitter';
      DividerComponent,
      FieldsetComponent,
      SplitterComponent,
+     StepperComponent,
+     ScrollpanelComponent,
+     TabviewComponent,
+     ToolbarComponent,
 
   ],
   imports: [
@@ -70,7 +85,14 @@ import { SplitterModule } from 'primeng/splitter';
     DividerModule,
     FieldsetModule,
     PanelModule,
-    SplitterModule
+    SplitterModule,
+    StepperModule,
+    ScrollPanelModule,
+    TabViewModule,
+    ToolbarModule,
+    SplitButtonModule,
+    ConfirmDialogModule,
+    ToastModule
     
 
   

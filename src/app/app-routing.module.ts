@@ -9,6 +9,10 @@ import { DividerComponent } from './panel/divider/divider.component';
 import { FieldsetComponent } from './panel/fieldset/fieldset.component';
 import { PanelComponent } from './panel/panel.component';
 import { SplitterComponent } from './panel/splitter/splitter.component';
+import { StepperComponent } from './panel/stepper/stepper.component';
+import { ScrollpanelComponent } from './panel/scrollpanel/scrollpanel.component';
+import { TabviewComponent } from './panel/tabview/tabview.component';
+import { ToolbarComponent } from './panel/toolbar/toolbar.component';
 
 
 const routes: Routes = [
@@ -22,7 +26,11 @@ const routes: Routes = [
   { path:'divider', component: DividerComponent},
   { path:'fieldset', component: FieldsetComponent},
   { path:'panel', component: PanelComponent},
-  { path:'splitter', component: SplitterComponent}
+  { path:'splitter', component: SplitterComponent},
+  { path:'stepper', component: StepperComponent},
+  { path:'scrollpanel', component: ScrollpanelComponent},
+  { path:'tabview', component: TabviewComponent},
+  { path:'toolbar', component: ToolbarComponent}
 ];
 
 @NgModule({
