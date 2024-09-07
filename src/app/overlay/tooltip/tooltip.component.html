@@ -1,0 +1,72 @@
+
+
+<h5 class="text-center m-4 ">tooltip position</h5>
+
+<div class="d-flex flex-wrap justify-content-center gap-2">
+    <input 
+        type="text" 
+        pInputText 
+        pTooltip="Enter your username"
+        tooltipPosition="right" 
+        placeholder="Right" />
+    <input 
+        type="text" 
+        pInputText 
+        pTooltip="Enter your username" 
+        tooltipPosition="left" 
+        placeholder="Left">
+    <input 
+        type="text" 
+        pInputText 
+        pTooltip="Enter your username" 
+        tooltipPosition="top" 
+        placeholder="Top">
+    <input 
+        type="text" 
+        pInputText 
+        pTooltip="Enter your username" 
+        tooltipPosition="bottom" 
+        placeholder="Bottom">
+</div>
+<h5 class="text-center m-4 ">tooltip event</h5>
+<div class="d-flex justify-content-center">
+    <input 
+        type="text" 
+        pInputText 
+        pTooltip="Enter your username" 
+        tooltipEvent="focus" 
+        placeholder="focus to display tooltip">
+</div>
+<h5 class="text-center m-4 ">tooltip Auto Hide</h5>
+
+<div class="d-flex flex-wrap justify-content-center gap-2">
+    <input 
+        type="text" 
+        pInputText 
+        pTooltip="Enter your username" 
+        [autoHide]="false" 
+        placeholder="autoHide: false" />
+    <input 
+        type="text" 
+        pInputText 
+        pTooltip="Enter your username" 
+        placeholder="autoHide: true">
+</div>
+
+<h5 class="text-center m-4 ">tooltip Custom</h5>
+
+<div class="d-flex justify-content-center">
+    <p-button 
+        [pTooltip]="tooltipContent"
+        severity="secondary" 
+        tooltipPosition="bottom" 
+        label="Button" />
+            <ng-template #tooltipContent>
+                <div class="flex align-items-center">
+                    <span> <b>PrimeNG</b> rocks! </span>
+                </div>
+            </ng-template>
+</div>
+
+
+

@@ -1,0 +1,49 @@
+
+
+
+<h5 class="text-center m-4">image</h5>
+
+<div class="d-flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+        alt="Image"
+        width="250" />
+</div>
+
+<h5 class="text-center m-4">image preview</h5>
+
+
+<div class="d-flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+        alt="Image" 
+        width="250" 
+        [preview]="true" />
+</div>
+
+<h5 class="text-center m-4">image indicator</h5>
+
+<div class="d-flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" 
+        [preview]="true" 
+        alt="Image" 
+        width="250">
+            <ng-template pTemplate="indicator">
+                <i class="pi pi-check"></i>
+            </ng-template>
+    </p-image>
+</div>
+
+<h5 class="text-center m-4">image source</h5>
+
+<div class="d-flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria11.jpg" 
+        previewImageSrc="https://primefaces.org/cdn/primeng/images/galleria/galleria11.jpg" 
+        alt="Image" 
+        width="250" 
+        [preview]="true" />
+</div>
+
+

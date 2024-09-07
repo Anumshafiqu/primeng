@@ -13,6 +13,17 @@ import { StepperComponent } from './panel/stepper/stepper.component';
 import { ScrollpanelComponent } from './panel/scrollpanel/scrollpanel.component';
 import { TabviewComponent } from './panel/tabview/tabview.component';
 import { ToolbarComponent } from './panel/toolbar/toolbar.component';
+import { OverlaypanelComponent } from './overlay/overlaypanel/overlaypanel.component';
+import { SidebarComponent } from './overlay/sidebar/sidebar.component';
+import { TooltipComponent } from './overlay/tooltip/tooltip.component';
+import { UploadComponent } from './overlay/upload/upload.component';
+import { BreadcrumbComponent } from './overlay/breadcrumb/breadcrumb.component';
+import { ContextmenuComponent } from './overlay/contextmenu/contextmenu.component';
+import { DockComponent } from './overlay/dock/dock.component';
+import { ChartComponent } from './overlay/chart/chart.component';
+import { PieComponent } from './overlay/chart/pie/pie.component';
+import { ImageComponent } from './overlay/image/image.component';
+import { AvatarComponent } from './overlay/avatar/avatar.component';
 
 
 const routes: Routes = [
@@ -22,7 +33,7 @@ const routes: Routes = [
   // {path:'treeTable', component: TreeTableComponent},
   // {path: 'accordian' , component: AccordianComponent},
   // { path:'card', component: CardComponent},
-  {path: '', component: DividerComponent},
+  {path: '', component: SidebarComponent},
   { path:'divider', component: DividerComponent},
   { path:'fieldset', component: FieldsetComponent},
   { path:'panel', component: PanelComponent},
@@ -30,7 +41,15 @@ const routes: Routes = [
   { path:'stepper', component: StepperComponent},
   { path:'scrollpanel', component: ScrollpanelComponent},
   { path:'tabview', component: TabviewComponent},
-  { path:'toolbar', component: ToolbarComponent}
+  { path:'toolbar', component: ToolbarComponent},
+  { path:'overlaypanel', component: OverlaypanelComponent},
+  { path:'sidebar', component: SidebarComponent},
+  { path:'tooltip', component: TooltipComponent},
+  { path:'upload', component: UploadComponent},
+  { path:'contextmenu', component:ContextmenuComponent},
+  { path:'chart', component: ChartComponent},
+  { path:'image', component: ImageComponent},
+  { path:'avatar', component: AvatarComponent}
 ];
 
 @NgModule({

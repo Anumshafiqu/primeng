@@ -1,0 +1,93 @@
+
+<h5 class="text-center m-4 ">sidebar</h5>
+<div class="d-flex justify-content-center">
+    <p-sidebar [(visible)]="sidebarVisible">
+        <h3>Sidebar</h3>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </p-sidebar>
+    <p-button (onClick)="sidebarVisible = true" icon="pi pi-arrow-right" />
+</div>
+
+<h5 class="text-center m-4 ">sidebar position</h5>
+<div class="d-flex flex-wrap justify-content-center gap-2">
+    <p-sidebar [(visible)]="sidebarVisible1" position="left">
+        <h3>Left Sidebar</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis laboriosam reiciendis temporibus magni hic dolorem, nemo quisquam harum! Quia ullam explicabo dolore harum dolorum, modi architecto cum deleniti incidunt.</p>
+    </p-sidebar>
+
+    <p-sidebar [(visible)]="sidebarVisible2" position="right">
+        <h3>Right Sidebar</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis laboriosam reiciendis temporibus magni hic dolorem, nemo quisquam harum! Quia ullam explicabo dolore harum dolorum, modi architecto cum deleniti incidunt.</p>
+
+    </p-sidebar>
+
+    <p-sidebar [(visible)]="sidebarVisible3" position="top">
+        <h3>Top Sidebar</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis laboriosam reiciendis temporibus magni hic dolorem, nemo quisquam harum! Quia ullam explicabo dolore harum dolorum, modi architecto cum deleniti incidunt.</p>
+
+    </p-sidebar>
+
+    <p-sidebar [(visible)]="sidebarVisible4" position="bottom">
+        <h3>Bottom Sidebar</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis laboriosam reiciendis temporibus magni hic dolorem, nemo quisquam harum! Quia ullam explicabo dolore harum dolorum, modi architecto cum deleniti incidunt.</p>
+
+    </p-sidebar>
+
+    <p-button 
+        type="button"
+        class="mr-2" 
+        (onClick)="sidebarVisible1 = true" 
+        icon="pi pi-arrow-right" />
+    <p-button 
+        type="button" 
+        class="mr-2" 
+        (onClick)="sidebarVisible2 = true" 
+        icon="pi pi-arrow-left" />
+    <p-button 
+        type="button"
+        class="mr-2" 
+        (onClick)="sidebarVisible3 = true" 
+        icon="pi pi-arrow-down" />
+    <p-button 
+        type="button" 
+        class="mr-2" 
+        (onClick)="sidebarVisible4 = true" 
+        icon="pi pi-arrow-up" />
+</div>
+<h5 class="text-center m-4 ">sidebar size</h5>
+<div class="d-flex justify-content-center">
+    <p-sidebar [(visible)]="sidebarVisible" styleClass="w-30rem">
+        <ng-template pTemplate="header">
+            <span class="font-semibold text-xl">Sidebar</span>
+        </ng-template>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </p-sidebar>
+    <p-button (onClick)="sidebarVisible = true" icon="pi pi-arrow-right" />
+</div>
+<h5 class="text-center m-4 ">sidebar template</h5>
+<div class="d-flex justify-content-center mt-4">
+    <p-sidebar [(visible)]="sidebarVisible">
+        <ng-template pTemplate="header">
+            <div class="flex align-items-center gap-2">
+                <p-avatar 
+                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                    shape="circle" />
+                <span class="font-bold">
+                    Amy Elsner
+                </span>
+            </div>
+        </ng-template>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+        </p>
+    </p-sidebar>
+    <p-button (onClick)="sidebarVisible = true" icon="pi pi-plus" />
+</div>

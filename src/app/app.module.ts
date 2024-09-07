@@ -41,6 +41,40 @@ import { ToolbarComponent } from './panel/toolbar/toolbar.component';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ToastModule } from 'primeng/toast';
+import { OverlayComponent } from './overlay/overlay.component';
+import { OverlaypanelComponent } from './overlay/overlaypanel/overlaypanel.component';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { ChipsModule } from 'primeng/chips';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { SidebarComponent } from './overlay/sidebar/sidebar.component';
+import { SidebarModule } from 'primeng/sidebar';
+import { TooltipModule } from 'primeng/tooltip';
+import { TooltipComponent } from './overlay/tooltip/tooltip.component';
+import { FileUploadModule } from 'primeng/fileupload';
+import { UploadComponent } from './overlay/upload/upload.component';
+import { BreadcrumbComponent } from './overlay/breadcrumb/breadcrumb.component';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { ContextMenuModule } from 'primeng/contextmenu';
+import { ContextmenuComponent } from './overlay/contextmenu/contextmenu.component';
+import { ContextMenu } from 'primeng/contextmenu';
+import { DockComponent } from './overlay/dock/dock.component';
+import { DockModule } from 'primeng/dock';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { MenuModule } from 'primeng/menu';
+import { MenubarModule } from 'primeng/menubar';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { StepsModule } from 'primeng/steps';
+import { ChartComponent } from './overlay/chart/chart.component';
+import { ChartModule } from 'primeng/chart';
+import { PieComponent } from './overlay/chart/pie/pie.component';
+import { ImageComponent } from './overlay/image/image.component';
+import { ImageModule } from 'primeng/image';
+import { DragDropModule } from 'primeng/dragdrop';
+import { AvatarGroupModule } from 'primeng/avatargroup';
+import { AvatarComponent } from './overlay/avatar/avatar.component';
+
+
 
 
 
@@ -63,6 +97,18 @@ import { ToastModule } from 'primeng/toast';
      ScrollpanelComponent,
      TabviewComponent,
      ToolbarComponent,
+     OverlayComponent,
+     OverlaypanelComponent,
+     SidebarComponent,
+     TooltipComponent,
+     UploadComponent,
+     BreadcrumbComponent,
+     ContextmenuComponent,
+     DockComponent,
+     ChartComponent,
+     PieComponent,
+     ImageComponent,
+     AvatarComponent,
 
   ],
   imports: [
@@ -92,7 +138,27 @@ import { ToastModule } from 'primeng/toast';
     ToolbarModule,
     SplitButtonModule,
     ConfirmDialogModule,
-    ToastModule
+    ToastModule,
+    OverlayPanelModule,
+    InputGroupModule,
+    ChipsModule,
+    InputGroupAddonModule,
+    SidebarModule,
+    TooltipModule,
+    FileUploadModule,
+    BreadcrumbModule,
+    ContextMenuModule,
+    DockModule,
+    RadioButtonModule,
+    MenuModule,
+    MenubarModule,
+    PanelMenuModule,
+    StepsModule,
+    ChartModule,
+    ImageModule,
+    DragDropModule,
+    AvatarGroupModule
+    
     
 
   

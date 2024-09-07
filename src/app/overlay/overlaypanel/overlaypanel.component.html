@@ -1,0 +1,43 @@
+
+<h5 class="text-center m-4 ">overlay</h5>
+
+<div class="d-flex justify-content-center mt-3">
+    <p-button (onClick)="op.toggle($event)" icon="pi pi-share-alt" label="Share" />
+    <p-overlayPanel #op>
+        <div class="flex flex-column gap-3 w-25rem">
+            <div>
+                <span class="font-medium text-900 block mb-2">Share this document</span>
+                <p-inputGroup>
+                    <input pInputText value="https://primeng.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-25rem mt-1" />
+                    <p-inputGroupAddon>
+                        <i class="pi pi-copy"></i>
+                    </p-inputGroupAddon>
+                </p-inputGroup>
+            </div>
+            <div>
+                <span class="font-medium text-900 block mb-2 mt-4">Invite Member</span>
+                <div class="flex">
+                    <p-chips disabled  class="p-0 mt-2"/>
+                </div>
+            </div>
+            <div>
+                <span class="font-medium text-900 block mb-2">Team Members</span>
+                <ul class="list-none p-0 m-0 flex flex-column gap-3">
+                    <li *ngFor="let member of members" class="flex align-items-center gap-2">
+                        <img [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + member.image" style="width: 32px" />
+                        <div>
+                            <span class="font-medium">{{ member.name }}</span>
+                            <div class="text-sm text-color-secondary">{{ member.email }}</div>
+                        </div>
+                        <div class="flex align-items-center gap-2 text-color-secondary ml-auto text-sm">
+                            <span class="ms-auto">{{ member.role }}</span>
+                            <i class="pi pi-angle-down"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </p-overlayPanel>
+</div>
+
+
