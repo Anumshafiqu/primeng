@@ -1,0 +1,59 @@
+
+<h5 class="text-center m-4">Metakey table</h5>
+
+<div class="">
+    <div class="d-flex justify-content-center align-items-center mb-4 gap-2">
+        <p-inputSwitch [(ngModel)]="metaKey" inputId="input-metakey" />
+        <label for="input-metakey">MetaKey</label>
+    </div>
+    <p-table [value]="products" selectionMode="single" [(selection)]="selectedProduct" [metaKeySelection]="metaKey" dataKey="id" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr [pSelectableRow]="product">
+                <td>{{ product.code }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.category }}</td>
+                <td>{{ product.quantity }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+<h5 class="text-center m-4 mt-5">Metakey table multiple</h5>
+<div class="mt-4">
+    <div class="d-flex justify-content-center align-items-center mb-4 gap-2">
+        <p-inputSwitch [(ngModel)]="metaKey" inputId="input-metakey" />
+        <label for="input-metakey">MetaKey</label>
+    </div>
+    <p-table 
+        [value]="products" 
+        selectionMode="multiple" 
+        [(selection)]="selectedProducts" 
+        [metaKeySelection]="metaKey" 
+        dataKey="code" 
+        [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product let-rowIndex="rowIndex">
+                <tr [pSelectableRow]="product" [pSelectableRowIndex]="rowIndex">
+                    <td>{{ product.code }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.category }}</td>
+                    <td>{{ product.quantity }}</td>
+                </tr>
+            </ng-template>
+    </p-table>
+</div>

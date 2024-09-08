@@ -73,6 +73,31 @@ import { ImageModule } from 'primeng/image';
 import { DragDropModule } from 'primeng/dragdrop';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { AvatarComponent } from './overlay/avatar/avatar.component';
+import { TableComponent } from './table/table.component';
+import { TableModule } from 'primeng/table';
+import { DynamicColumnsComponent } from './table/dynamic-columns/dynamic-columns.component';
+import { TemplateComponent } from './table/template/template.component';
+import { SizeComponent } from './table/size/size.component';
+import { GridlinesComponent } from './table/gridlines/gridlines.component';
+import { TagModule } from 'primeng/tag';
+import { RatingModule } from 'primeng/rating';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { StripedrowComponent } from './table/stripedrow/stripedrow.component';
+import { StyleComponent } from './table/style/style.component';
+import { ResponsiveComponent } from './table/responsive/responsive.component';
+import { StackComponent } from './table/stack/stack.component';
+import { PaginatorComponent } from './table/paginator/paginator.component';
+import { ProgrammaticComponent } from './table/programmatic/programmatic.component';
+import { SortComponent } from './table/sort/sort.component';
+import { MultiplecolumsComponent } from './table/multiplecolums/multiplecolums.component';
+import { PresortComponent } from './table/presort/presort.component';
+import { RemoveableComponent } from './table/removeable/removeable.component';
+import { FilterComponent } from './table/filter/filter.component';
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { MetakeyComponent } from './table/metakey/metakey.component';
+import { RadiobuttonComponent } from './table/radiobutton/radiobutton.component';
 
 
 
@@ -109,6 +134,24 @@ import { AvatarComponent } from './overlay/avatar/avatar.component';
      PieComponent,
      ImageComponent,
      AvatarComponent,
+     TableComponent,
+     DynamicColumnsComponent,
+     TemplateComponent,
+     SizeComponent,
+     GridlinesComponent,
+     StripedrowComponent,
+     StyleComponent,
+     ResponsiveComponent,
+     StackComponent,
+     PaginatorComponent,
+     ProgrammaticComponent,
+     SortComponent,
+     MultiplecolumsComponent,
+     PresortComponent,
+     RemoveableComponent,
+     FilterComponent,
+     MetakeyComponent,
+     RadiobuttonComponent,
 
   ],
   imports: [
@@ -157,7 +200,14 @@ import { AvatarComponent } from './overlay/avatar/avatar.component';
     ChartModule,
     ImageModule,
     DragDropModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    TableModule,
+    TagModule,
+    RatingModule,
+    SelectButtonModule,
+    IconFieldModule,
+    InputIconModule,
+    MultiSelectModule
     
     
 

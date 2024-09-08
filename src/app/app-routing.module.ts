@@ -24,6 +24,24 @@ import { ChartComponent } from './overlay/chart/chart.component';
 import { PieComponent } from './overlay/chart/pie/pie.component';
 import { ImageComponent } from './overlay/image/image.component';
 import { AvatarComponent } from './overlay/avatar/avatar.component';
+import { TableComponent } from './table/table.component';
+import { DynamicColumnsComponent } from './table/dynamic-columns/dynamic-columns.component';
+import { TemplateComponent } from './table/template/template.component';
+import { SizeComponent } from './table/size/size.component';
+import { GridlinesComponent } from './table/gridlines/gridlines.component';
+import { StripedrowComponent } from './table/stripedrow/stripedrow.component';
+import { StyleComponent } from './table/style/style.component';
+import { ResponsiveComponent } from './table/responsive/responsive.component';
+import { StackComponent } from './table/stack/stack.component';
+import { PaginatorComponent } from './table/paginator/paginator.component';
+import { ProgrammaticComponent } from './table/programmatic/programmatic.component';
+import { SortComponent } from './table/sort/sort.component';
+import { MultiplecolumsComponent } from './table/multiplecolums/multiplecolums.component';
+import { PresortComponent } from './table/presort/presort.component';
+import { RemoveableComponent } from './table/removeable/removeable.component';
+import { FilterComponent } from './table/filter/filter.component';
+import { MetakeyComponent } from './table/metakey/metakey.component';
+import { RadiobuttonComponent } from './table/radiobutton/radiobutton.component';
 
 
 const routes: Routes = [
@@ -33,23 +51,38 @@ const routes: Routes = [
   // {path:'treeTable', component: TreeTableComponent},
   // {path: 'accordian' , component: AccordianComponent},
   // { path:'card', component: CardComponent},
-  {path: '', component: SidebarComponent},
-  { path:'divider', component: DividerComponent},
-  { path:'fieldset', component: FieldsetComponent},
-  { path:'panel', component: PanelComponent},
-  { path:'splitter', component: SplitterComponent},
-  { path:'stepper', component: StepperComponent},
-  { path:'scrollpanel', component: ScrollpanelComponent},
-  { path:'tabview', component: TabviewComponent},
-  { path:'toolbar', component: ToolbarComponent},
-  { path:'overlaypanel', component: OverlaypanelComponent},
-  { path:'sidebar', component: SidebarComponent},
-  { path:'tooltip', component: TooltipComponent},
-  { path:'upload', component: UploadComponent},
-  { path:'contextmenu', component:ContextmenuComponent},
-  { path:'chart', component: ChartComponent},
-  { path:'image', component: ImageComponent},
-  { path:'avatar', component: AvatarComponent}
+  // { path:'divider', component: DividerComponent},
+  // { path:'fieldset', component: FieldsetComponent},
+  // { path:'panel', component: PanelComponent},
+  // { path:'splitter', component: SplitterComponent},
+  // { path:'stepper', component: StepperComponent},
+  // { path:'scrollpanel', component: ScrollpanelComponent},
+  // { path:'tabview', component: TabviewComponent},
+  // { path:'toolbar', component: ToolbarComponent},
+  // { path:'overlaypanel', component: OverlaypanelComponent},
+  // { path:'sidebar', component: SidebarComponent},
+  // { path:'tooltip', component: TooltipComponent},
+  // { path:'upload', component: UploadComponent},
+  // { path:'contextmenu', component:ContextmenuComponent},
+  // { path:'chart', component: ChartComponent},
+  // { path:'image', component: ImageComponent},
+  // { path:'avatar', component: AvatarComponent},
+  {path: '', component: TableComponent},
+  { path:'table', component: TableComponent},
+  { path:'dynamic-columns', component: DynamicColumnsComponent},
+  { path:'template', component: TemplateComponent},
+  { path:'size', component: SizeComponent},
+  { path:'gridlines', component: GridlinesComponent},
+  { path:'stripedrow', component: StripedrowComponent},
+  { path:'style', component: StyleComponent},
+  { path:'responsive', component: ResponsiveComponent},
+  { path:'stack', component: StackComponent},
+  { path:'paginator', component: PaginatorComponent},
+  { path:'sort', component: SortComponent},
+  { path:'multiplecolums', component: MultiplecolumsComponent},
+  { path:'presort', component: PresortComponent},
+  { path:'metakey', component: MetakeyComponent},
+  { path:'radiobutton', component: RadiobuttonComponent}
 ];
 
 @NgModule({
