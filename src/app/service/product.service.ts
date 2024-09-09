@@ -1206,7 +1206,9 @@ getProductsWithOrdersData() {
         }
     ];
 }
-
+getCustomersMedium(){
+    return Promise.resolve(this.getProductsData().slice(0, 5));
+}
 getProductsMini() {
     return Promise.resolve(this.getProductsData().slice(0, 5));
 }

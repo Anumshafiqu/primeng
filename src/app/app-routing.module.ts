@@ -42,6 +42,26 @@ import { RemoveableComponent } from './table/removeable/removeable.component';
 import { FilterComponent } from './table/filter/filter.component';
 import { MetakeyComponent } from './table/metakey/metakey.component';
 import { RadiobuttonComponent } from './table/radiobutton/radiobutton.component';
+import { CheckboxComponent } from './table/checkbox/checkbox.component';
+import { EventComponent } from './table/event/event.component';
+import { RowexpansionComponent } from './table/rowexpansion/rowexpansion.component';
+import { ColumnselectionComponent } from './table/columnselection/columnselection.component';
+import { EditComponent } from './table/edit/edit.component';
+import { ScrollComponent } from './table/scroll/scroll.component';
+import { VerticalComponent } from './table/vertical/vertical.component';
+import { HorizontalComponent } from './table/horizontal/horizontal.component';
+import { FlexibleComponent } from './table/flexible/flexible.component';
+import { RowComponent } from './table/row/row.component';
+import { FrozenrowComponent } from './table/frozenrow/frozenrow.component';
+import { FrozencolumnComponent } from './table/frozencolumn/frozencolumn.component';
+import { VirtualscrollComponent } from './table/virtualscroll/virtualscroll.component';
+import { LazyloadingComponent } from './table/lazyloading/lazyloading.component';
+import { ColumngroupComponent } from './table/columngroup/columngroup.component';
+import { RowgroupComponent } from './table/rowgroup/rowgroup.component';
+import { ExpandableComponent } from './table/expandable/expandable.component';
+import { RowspanComponent } from './table/rowspan/rowspan.component';
+import { ColumnresizeComponent } from './table/columnresize/columnresize.component';
+import { ScrollableComponent } from './table/scrollable/scrollable.component';
 
 
 const routes: Routes = [
@@ -67,22 +87,41 @@ const routes: Routes = [
   // { path:'chart', component: ChartComponent},
   // { path:'image', component: ImageComponent},
   // { path:'avatar', component: AvatarComponent},
-  {path: '', component: TableComponent},
-  { path:'table', component: TableComponent},
-  { path:'dynamic-columns', component: DynamicColumnsComponent},
-  { path:'template', component: TemplateComponent},
-  { path:'size', component: SizeComponent},
-  { path:'gridlines', component: GridlinesComponent},
-  { path:'stripedrow', component: StripedrowComponent},
-  { path:'style', component: StyleComponent},
-  { path:'responsive', component: ResponsiveComponent},
-  { path:'stack', component: StackComponent},
-  { path:'paginator', component: PaginatorComponent},
-  { path:'sort', component: SortComponent},
-  { path:'multiplecolums', component: MultiplecolumsComponent},
-  { path:'presort', component: PresortComponent},
-  { path:'metakey', component: MetakeyComponent},
-  { path:'radiobutton', component: RadiobuttonComponent}
+  {path: '', component: CheckboxComponent},
+  // { path:'table', component: TableComponent},
+  // { path:'dynamic-columns', component: DynamicColumnsComponent},
+  // { path:'template', component: TemplateComponent},
+  // { path:'size', component: SizeComponent},
+  // { path:'gridlines', component: GridlinesComponent},
+  // { path:'stripedrow', component: StripedrowComponent},
+  // { path:'style', component: StyleComponent},
+  // { path:'responsive', component: ResponsiveComponent},
+  // { path:'stack', component: StackComponent},
+  // { path:'paginator', component: PaginatorComponent},
+  // { path:'sort', component: SortComponent},
+  // { path:'multiplecolums', component: MultiplecolumsComponent},
+  // { path:'presort', component: PresortComponent},
+  // { path:'metakey', component: MetakeyComponent},
+  // { path:'radiobutton', component: RadiobuttonComponent},
+
+  { path:'checkbox', component: CheckboxComponent},
+  { path:'edit', component: EditComponent},
+  { path:'scroll', component: ScrollComponent},
+  { path:'row', component: RowComponent},
+  { path:'scrollable', component: ScrollableComponent},
+  { path:'horizontal', component: HorizontalComponent},
+  { path:'flexible', component: FlexibleComponent},
+  { path:'frozenrow', component: FrozenrowComponent},
+  { path:'frozencolumn', component: FrozencolumnComponent},
+  { path:'virtualscroll', component: VirtualscrollComponent},
+  { path:'columngroup', component: ColumngroupComponent},
+  { path:'rowgroup', component: RowgroupComponent},
+  { path:'expandable', component: ExpandableComponent},
+  { path:'rowspan', component: RowspanComponent},
+  { path:'columnresize', component: ColumnresizeComponent},
+
+  
+
 ];
 
 @NgModule({

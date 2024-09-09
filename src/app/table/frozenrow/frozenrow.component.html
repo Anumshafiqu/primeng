@@ -1,0 +1,57 @@
+
+<h5 class="text-center m-4">Frozen Rows</h5>
+<div class="card">
+    <p-table 
+        [value]="unlockedCustomers" 
+        [frozenValue]="lockedCustomers" 
+        [scrollable]="true" 
+        scrollHeight="400px" 
+        [tableStyle]="{'min-width': '60rem'}">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>Company</th>
+                    <th>Representative</th>
+                    <th style="width:5rem"></th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="frozenbody" let-customer let-index="rowIndex">
+                <tr>
+                    <td>{{customer.name}}</td>
+                    <td>{{customer.country.name}}</td>
+                    <td>{{customer.company}}</td>
+                    <td>{{customer.representative.name}}</td>
+                    <td>
+                        <button 
+                            pButton 
+                            pRipple 
+                            type="button" 
+                            [icon]="'pi pi-lock-open'" 
+                            (click)="toggleLock(customer,true,index)" 
+                            class="p-button-sm p-button-text">
+                        </button>
+                    </td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-customer let-index="rowIndex">
+                <tr>
+                    <td>{{customer.name}}</td>
+                    <td>{{customer.country.name}}</td>
+                    <td>{{customer.company}}</td>
+                    <td>{{customer.representative.name}}</td>
+                    <td>
+                        <button 
+                            pButton 
+                            pRipple 
+                            type="button" 
+                            [icon]="'pi pi-lock'" 
+                            [disabled]="lockedCustomers.length >= 2" 
+                            (click)="toggleLock(customer,false,index)" 
+                            class="p-button-sm p-button-text">
+                        </button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+</div>

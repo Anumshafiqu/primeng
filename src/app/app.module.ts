@@ -98,6 +98,30 @@ import { InputIconModule } from 'primeng/inputicon';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { MetakeyComponent } from './table/metakey/metakey.component';
 import { RadiobuttonComponent } from './table/radiobutton/radiobutton.component';
+import { CheckboxComponent } from './table/checkbox/checkbox.component';
+import { EventComponent } from './table/event/event.component';
+import { RowexpansionComponent } from './table/rowexpansion/rowexpansion.component';
+import { ColumnselectionComponent } from './table/columnselection/columnselection.component';
+import { EditComponent } from './table/edit/edit.component';
+import { RowComponent } from './table/row/row.component';
+import { FilterCellComponent } from './table/filter-cell/filter-cell.component';
+import { ScrollComponent } from './table/scroll/scroll.component';
+import { VerticalComponent } from './table/vertical/vertical.component';
+import { FlexibleComponent } from './table/flexible/flexible.component';
+import { HorizontalComponent } from './table/horizontal/horizontal.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DialogModule } from 'primeng/dialog';
+import { FrozenrowComponent } from './table/frozenrow/frozenrow.component';
+import { FrozencolumnComponent } from './table/frozencolumn/frozencolumn.component';
+import { ToggleButtonModule } from 'primeng/togglebutton';
+import { VirtualscrollComponent } from './table/virtualscroll/virtualscroll.component';
+import { LazyloadingComponent } from './table/lazyloading/lazyloading.component';
+import { ColumngroupComponent } from './table/columngroup/columngroup.component';
+import { RowgroupComponent } from './table/rowgroup/rowgroup.component';
+import { ExpandableComponent } from './table/expandable/expandable.component';
+import { RowspanComponent } from './table/rowspan/rowspan.component';
+import { ColumnresizeComponent } from './table/columnresize/columnresize.component';
+import { ScrollableComponent } from './table/scrollable/scrollable.component';
 
 
 
@@ -152,6 +176,31 @@ import { RadiobuttonComponent } from './table/radiobutton/radiobutton.component'
      FilterComponent,
      MetakeyComponent,
      RadiobuttonComponent,
+     CheckboxComponent,
+     EventComponent,
+     RowexpansionComponent,
+     ColumnselectionComponent,
+     EditComponent,
+     RowComponent,
+     FilterCellComponent,
+     ScrollComponent,
+     VerticalComponent,
+     FlexibleComponent,
+     HorizontalComponent,
+     FrozenrowComponent,
+     FrozencolumnComponent,
+     VirtualscrollComponent,
+     LazyloadingComponent,
+     ColumngroupComponent,
+     RowgroupComponent,
+     ExpandableComponent,
+     RowspanComponent,
+     ColumnresizeComponent,
+     ScrollableComponent,
+     
+     
+     
+     
 
   ],
   imports: [
@@ -207,7 +256,12 @@ import { RadiobuttonComponent } from './table/radiobutton/radiobutton.component'
     SelectButtonModule,
     IconFieldModule,
     InputIconModule,
-    MultiSelectModule
+    MultiSelectModule,
+    HttpClientModule,
+    DialogModule,
+    ToggleButtonModule
+
+    
     
     
 
