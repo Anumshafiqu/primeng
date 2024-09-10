@@ -1,3 +1,33 @@
 
 
 
+<h5 class="text-center m-4">Removeable</h5>
+
+<div class="card">
+    <p-table #dt [value]="product" (sortFunction)="customSort($event)" [customSort]="true">
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="code">
+                    Code <p-sortIcon field="code" />
+                </th>
+                <th pSortableColumn="name">
+                    Name <p-sortIcon field="name" />
+                </th>
+                <th pSortableColumn="category">
+                    Category <p-sortIcon field="category" />
+                </th>
+                <th pSortableColumn="quantity">
+                    Quantity <p-sortIcon field="quantity" />
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr>
+                <td>{{ product.code }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.category }}</td>
+                <td>{{ product.quantity }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

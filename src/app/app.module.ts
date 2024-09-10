@@ -122,6 +122,14 @@ import { ExpandableComponent } from './table/expandable/expandable.component';
 import { RowspanComponent } from './table/rowspan/rowspan.component';
 import { ColumnresizeComponent } from './table/columnresize/columnresize.component';
 import { ScrollableComponent } from './table/scrollable/scrollable.component';
+import { ReorderComponent } from './table/reorder/reorder.component';
+import { ColumntoggleComponent } from './table/columntoggle/columntoggle.component';
+import { ExportComponent } from './table/export/export.component';
+import { MenucontextComponent } from './table/menucontext/menucontext.component';
+import { StatefulComponent } from './table/stateful/stateful.component';
+import { SamplesComponent } from './table/samples/samples.component';
+import { SliderModule } from 'primeng/slider';
+import { ProductPageComponent } from './table/product-page/product-page.component';
 
 
 
@@ -197,6 +205,13 @@ import { ScrollableComponent } from './table/scrollable/scrollable.component';
      RowspanComponent,
      ColumnresizeComponent,
      ScrollableComponent,
+     ReorderComponent,
+     ColumntoggleComponent,
+     ExportComponent,
+     MenucontextComponent,
+     StatefulComponent,
+     SamplesComponent,
+     ProductPageComponent,
      
      
      
@@ -259,7 +274,8 @@ import { ScrollableComponent } from './table/scrollable/scrollable.component';
     MultiSelectModule,
     HttpClientModule,
     DialogModule,
-    ToggleButtonModule
+    ToggleButtonModule,
+    SliderModule
 
     
     

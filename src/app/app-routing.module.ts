@@ -62,6 +62,14 @@ import { ExpandableComponent } from './table/expandable/expandable.component';
 import { RowspanComponent } from './table/rowspan/rowspan.component';
 import { ColumnresizeComponent } from './table/columnresize/columnresize.component';
 import { ScrollableComponent } from './table/scrollable/scrollable.component';
+import { ReorderComponent } from './table/reorder/reorder.component';
+import { ColumntoggleComponent } from './table/columntoggle/columntoggle.component';
+import { ExportComponent } from './table/export/export.component';
+import { MenucontextComponent } from './table/menucontext/menucontext.component';
+import { StatefulComponent } from './table/stateful/stateful.component';
+import { SamplesComponent } from './table/samples/samples.component';
+import { ProductPageComponent } from './table/product-page/product-page.component';
+import { FilterCellComponent } from './table/filter-cell/filter-cell.component';
 
 
 const routes: Routes = [
@@ -87,7 +95,7 @@ const routes: Routes = [
   // { path:'chart', component: ChartComponent},
   // { path:'image', component: ImageComponent},
   // { path:'avatar', component: AvatarComponent},
-  {path: '', component: CheckboxComponent},
+  // {path: '', component: CheckboxComponent},
   // { path:'table', component: TableComponent},
   // { path:'dynamic-columns', component: DynamicColumnsComponent},
   // { path:'template', component: TemplateComponent},
@@ -104,21 +112,33 @@ const routes: Routes = [
   // { path:'metakey', component: MetakeyComponent},
   // { path:'radiobutton', component: RadiobuttonComponent},
 
-  { path:'checkbox', component: CheckboxComponent},
-  { path:'edit', component: EditComponent},
-  { path:'scroll', component: ScrollComponent},
-  { path:'row', component: RowComponent},
-  { path:'scrollable', component: ScrollableComponent},
-  { path:'horizontal', component: HorizontalComponent},
-  { path:'flexible', component: FlexibleComponent},
-  { path:'frozenrow', component: FrozenrowComponent},
-  { path:'frozencolumn', component: FrozencolumnComponent},
-  { path:'virtualscroll', component: VirtualscrollComponent},
-  { path:'columngroup', component: ColumngroupComponent},
-  { path:'rowgroup', component: RowgroupComponent},
-  { path:'expandable', component: ExpandableComponent},
-  { path:'rowspan', component: RowspanComponent},
-  { path:'columnresize', component: ColumnresizeComponent},
+  
+  // { path:'edit', component: EditComponent},
+  // { path:'scroll', component: ScrollComponent},
+  // { path:'row', component: RowComponent},
+  // { path:'scrollable', component: ScrollableComponent},
+  // { path:'horizontal', component: HorizontalComponent},
+  // { path:'flexible', component: FlexibleComponent},
+  // { path:'frozenrow', component: FrozenrowComponent},
+  // { path:'frozencolumn', component: FrozencolumnComponent},
+  // { path:'virtualscroll', component: VirtualscrollComponent},
+  // { path:'columngroup', component: ColumngroupComponent},
+  // { path:'rowgroup', component: RowgroupComponent},
+  // { path:'expandable', component: ExpandableComponent},
+  // { path:'rowspan', component: RowspanComponent},
+  // { path:'columnresize', component: ColumnresizeComponent},
+  { path:'', component: ReorderComponent},
+  { path:'reorder', component: ReorderComponent},
+  { path:'columntoggle', component: ColumntoggleComponent},
+  { path:'export', component: ExportComponent},
+  { path:'stateful', component: StatefulComponent},
+  { path:'samples', component: SamplesComponent},
+  { path:'product-page', component: ProductPageComponent},
+  { path:'filter-cell', component: FilterCellComponent},
+  { path:'vertical', component: VerticalComponent},
+  { path:'removeable', component: RemoveableComponent},
+  { path:'programmatic', component: ProgrammaticComponent},
+  { path:'paginator', component: PaginatorComponent},
 
   
 
