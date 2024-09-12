@@ -130,6 +130,32 @@ import { StatefulComponent } from './table/stateful/stateful.component';
 import { SamplesComponent } from './table/samples/samples.component';
 import { SliderModule } from 'primeng/slider';
 import { ProductPageComponent } from './table/product-page/product-page.component';
+import { BadgeComponent } from './badge/badge.component';
+import { BlockUIModule } from 'primeng/blockui';
+import { BlockuiComponent } from './badge/blockui/blockui.component';
+import { ChipModule } from 'primeng/chip';
+import { ChipComponent } from './badge/chip/chip.component';
+import { InplaceModule } from 'primeng/inplace';
+import { InplaceComponent } from './badge/inplace/inplace.component';
+import { MeterGroupModule } from 'primeng/metergroup';
+import { MetergroupComponent } from './badge/metergroup/metergroup.component';
+import { ScrollTopModule } from 'primeng/scrolltop';
+import { ScrolltopComponent } from './badge/scrolltop/scrolltop.component';
+import { SkeletonModule } from 'primeng/skeleton';
+import { SkeletonComponent } from './badge/skeleton/skeleton.component';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { ProgressbarComponent } from './badge/progressbar/progressbar.component';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ProgressspinnerComponent } from './badge/progressspinner/progressspinner.component';
+import { TagComponent } from './badge/tag/tag.component';
+import { TerminalModule } from 'primeng/terminal';
+import { TerminalComponent } from './badge/terminal/terminal.component';
+import { DeferModule } from 'primeng/defer';
+import { FocustrapComponent } from './badge/focustrap/focustrap.component';
+
+
+
+
 
 
 
@@ -212,6 +238,19 @@ import { ProductPageComponent } from './table/product-page/product-page.componen
      StatefulComponent,
      SamplesComponent,
      ProductPageComponent,
+     BadgeComponent,
+     BlockuiComponent,
+     ChipComponent,
+     InplaceComponent,
+     MetergroupComponent,
+     ScrolltopComponent,
+     SkeletonComponent,
+     ProgressbarComponent,
+     ProgressspinnerComponent,
+     TagComponent,
+     TerminalComponent,
+     FocustrapComponent,
+     
      
      
      
@@ -275,7 +314,17 @@ import { ProductPageComponent } from './table/product-page/product-page.componen
     HttpClientModule,
     DialogModule,
     ToggleButtonModule,
-    SliderModule
+    SliderModule,
+    BlockUIModule,
+    ChipModule,
+    InplaceModule,
+    MeterGroupModule,
+    ScrollTopModule,
+    SkeletonModule,
+    ProgressBarModule,
+    ProgressSpinnerModule,
+    TerminalModule,
+    DeferModule
 
     
     

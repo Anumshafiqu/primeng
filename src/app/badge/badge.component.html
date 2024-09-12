@@ -1,0 +1,45 @@
+
+
+<h5 class="text-center m-4">badge</h5>
+
+<div class="d-flex justify-content-center mt-3">
+    <p-badge [value]="2" />
+</div>
+<h5 class="text-center m-4">directive</h5>
+<div class="d-flex justify-content-center">
+    <i class="pi pi-bell text-3xl" pBadge value="2"></i>
+</div>
+<h5 class="text-center m-4">severity</h5>
+<div class="d-flex justify-content-center gap-2">
+    <p-badge [value]="2" severity="success" />
+    <p-badge [value]="9" severity="info" />
+    <p-badge [value]="3" severity="warning" />
+    <p-badge [value]="12" severity="danger" />
+</div>
+<h5 class="text-center m-4">size</h5>
+
+<div class="d-flex justify-content-center gap-2">
+    <p-badge value="2" />
+    <p-badge value="4" badgeSize="large" severity="warning" />
+    <p-badge value="6" badgeSize="xlarge" severity="success" />
+</div>
+<h5 class="text-center m-4">position</h5>
+<div class="d-flex justify-content-center gap-4">
+    <i class="pi pi-bell mr-4 p-text-secondary" pBadge style="font-size: 2rem" value="2"></i>
+    <i class="pi pi-calendar mr-4 p-text-secondary" pBadge style="font-size: 2rem" [value]="'10+'" severity="danger"></i>
+    <i class="pi pi-envelope p-text-secondary" pBadge style="font-size: 2rem" severity="danger"></i>
+</div>
+
+<h5 class="text-center m-4">button</h5>
+
+<div class="d-flex flex-wrap justify-content-center gap-2 rounded">
+    <p-button
+        label="Emails" 
+        badge="8" />
+    <p-button 
+        label="Messages" 
+        icon="pi pi-users" 
+        severity="secondary" 
+        badge="8" 
+        badgeClass="p-badge-info" />
+</div>

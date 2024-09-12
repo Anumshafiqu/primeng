@@ -70,6 +70,18 @@ import { StatefulComponent } from './table/stateful/stateful.component';
 import { SamplesComponent } from './table/samples/samples.component';
 import { ProductPageComponent } from './table/product-page/product-page.component';
 import { FilterCellComponent } from './table/filter-cell/filter-cell.component';
+import { BadgeComponent } from './badge/badge.component';
+import { BlockuiComponent } from './badge/blockui/blockui.component';
+import { ChipComponent } from './badge/chip/chip.component';
+import { InplaceComponent } from './badge/inplace/inplace.component';
+import { MetergroupComponent } from './badge/metergroup/metergroup.component';
+import { ScrolltopComponent } from './badge/scrolltop/scrolltop.component';
+import { SkeletonComponent } from './badge/skeleton/skeleton.component';
+import { ProgressbarComponent } from './badge/progressbar/progressbar.component';
+import { ProgressspinnerComponent } from './badge/progressspinner/progressspinner.component';
+import { TagComponent } from './badge/tag/tag.component';
+import { TerminalComponent } from './badge/terminal/terminal.component';
+import { FocustrapComponent } from './badge/focustrap/focustrap.component';
 
 
 const routes: Routes = [
@@ -127,18 +139,17 @@ const routes: Routes = [
   // { path:'expandable', component: ExpandableComponent},
   // { path:'rowspan', component: RowspanComponent},
   // { path:'columnresize', component: ColumnresizeComponent},
-  { path:'', component: ReorderComponent},
-  { path:'reorder', component: ReorderComponent},
-  { path:'columntoggle', component: ColumntoggleComponent},
-  { path:'export', component: ExportComponent},
-  { path:'stateful', component: StatefulComponent},
-  { path:'samples', component: SamplesComponent},
-  { path:'product-page', component: ProductPageComponent},
-  { path:'filter-cell', component: FilterCellComponent},
-  { path:'vertical', component: VerticalComponent},
-  { path:'removeable', component: RemoveableComponent},
-  { path:'programmatic', component: ProgrammaticComponent},
-  { path:'paginator', component: PaginatorComponent},
+  { path:'', component: BadgeComponent},
+  { path:'blockui', component: BlockuiComponent},
+  { path:'chip', component: ChipComponent},
+  { path:'inplace', component: InplaceComponent},
+  { path:'metergroup', component: MetergroupComponent},
+  { path:'scrolltop', component: ScrolltopComponent},
+  { path:'skeleton', component: SkeletonComponent},
+  { path:'progressbar', component: ProgressbarComponent},
+  { path:'progressspinner', component: ProgressspinnerComponent},
+  { path:'tag', component: TagComponent},
+  { path:'focustrap', component: FocustrapComponent},
 
   
 

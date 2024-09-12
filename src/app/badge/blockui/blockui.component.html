@@ -1,0 +1,24 @@
+
+
+<h5 class="text-center m-4">blockui</h5>
+
+<div class="m-3 p-3">
+<div class="d-flex">
+    <p-button label="Block" (onClick)="blockedPanel = true" class="mx-3" />
+    <p-button label="Unblock" (onClick)="blockedPanel = false" />
+</div>
+    <p-blockUI [target]="pnl" [blocked]="blockedPanel">
+        <i class="pi pi-lock" style="font-size: 3rem"></i>
+    </p-blockUI>
+    <p-panel #pnl header="Header" styleClass="mt-4">
+        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </p-panel>
+</div>
+<h5 class="text-center m-4">document</h5>
+<div class="d-flex justify-content-center">
+    <p-blockUI [blocked]="blockedDocument" />
+    <p-button label="Block" (onClick)="blockDocument()" />
+</div>
